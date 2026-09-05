@@ -44,3 +44,8 @@ print(sales_by_year(df))
 print(df.groupby("Year")["Name"].count())
 
 print(sales_by_region_and_genre(df))
+
+top_sales_global(df).to_csv('output/top_sales_global.csv', index=False)
+sales_by_genres(df).to_csv('output/sales_by_genre.csv')
+sales_by_year(df).to_csv('output/sales_by_year.csv')
+sales_by_region_and_genre(df).to_csv('output/sales_by_region_and_genre.csv')
