@@ -27,23 +27,12 @@ def sales_by_region_and_genre(df):
     return df.groupby("Genre")[["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"]].sum()
 
 df = pd.read_csv('data/vgsales.csv')
-print(df.info())
-print(df.isnull().sum())
 
 df["Publisher"] = fill_na_publisher(df)
-print(df.isnull().sum())
-
-print(top_sales_global(df))
-
-print(sales_by_genres(df))
-
-print(sales_by_year(df))
 
 # It explain the lack of global sales since 2016, the dataset is not uploaded after this period
 # We have to ignore the results since 2016
-print(df.groupby("Year")["Name"].count())
-
-print(sales_by_region_and_genre(df))
+#print(df.groupby("Year")["Name"].count())
 
 top_sales_global(df).to_csv('output/top_sales_global.csv', index=False)
 sales_by_genres(df).to_csv('output/sales_by_genre.csv')
