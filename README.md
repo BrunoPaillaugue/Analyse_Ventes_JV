@@ -12,10 +12,10 @@ used, modified, and redistributed without restriction.
 
 The script performs the following analyses:
 
-- **Top 10 best-selling games** — ranked by global sales
-- **Sales by genre** — total global sales aggregated per genre
-- **Sales by year** — evolution of global sales over time
-- **Sales by region and genre** — comparison of NA/EU/JP sales across genres
+- **Top 10 best-selling games**: ranked by global sales
+- **Sales by genre**: total global sales aggregated per genre
+- **Sales by year**: evolution of global sales over time
+- **Sales by region and genre**: comparison of NA/EU/JP sales across genres
 
 ## Known Data Limitations
 
@@ -37,11 +37,11 @@ The script performs the following analyses:
 
 ## Usage
 
-Run the script: python main.py
+Run the script: `python main.py`
 
 
 Results are saved as CSV files in the `output/` folder.
 
 ## Tests
 
-Run the test suite with: pytest
+Run the test suite with: `pytest`
